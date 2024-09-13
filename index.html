@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/line.css">
+    <style>
+      *{
+        font-family: "Kanit", sans-serif;
+      }
+      .card-cover {
+        background-size: cover; /* ทำให้ภาพพื้นหลังขยายให้เต็มกรอบ */
+        background-position: center; /* จัดตำแหน่งภาพให้อยู่กลางกรอบ */
+        background-repeat: no-repeat; /* ป้องกันการทำซ้ำของภาพพื้นหลัง */
+      }
+      .text-shadow-1 {
+        text-shadow: 1px 1px 2px rgb(255, 253, 253);
+      }
+    </style>
+</head>
+<body>
+    <!------------เริ่มส่วน Header------------>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2 text-secondary">หน้าแรก</a></li>
+          <li><a href="necklace.html" class="nav-link px-2 text-white">สร้อยคอ</a></li>
+          <li><a href="ring.html" class="nav-link px-2 text-white">แหวน</a></li>
+          <li><a href="earring.html" class="nav-link px-2 text-white">ต่างหู</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    <!------------จบส่วนของ Header------------>
+
+    <!------------เริ่มส่วนของ สไลด์------------>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/Banner.png" class="d-block w-100" alt="...">
+          </div> 
+      </div>
+    <!-------------------------จบ ส่วนของสไลด์--------------------->
+
+    <!------------เริ่มส่วนของ Heros------------>
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6" data-aos="fade-up" data-aos-duration="3000">
+        <img src="img/2.jpeg" class="d-block mx-lg-auto img-fluid rounded-5" alt="Woman accessorized with jewelry" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="3000">
+        <div class="px-3 px-lg-4">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">สวัสดีสาวๆ ทุกคนค่าาา</h1>
+          <p class="lead">ชอบแต่งตัวเรียบ ๆ ธรรมดา ๆ แต่อยากให้ดูมีอะไรเป็นจุดเด่นมากกว่าเดิม ก็แค่เพิ่มเครื่องประดับเข้าไป เท่านี้ก็จะเปลี่ยนลุคธรรมดา ๆ ของเราให้ดูมีอะไรเพิ่มมากขึ้นแล้ว เครื่องประดับแค่ชิ้นเดียว ไม่ว่าจะเป็นสร้อย กำไล ต่างหู แว่นตา ก็จะช่วยทำให้ลุคของเราดูดียิ่งขึ้นไปอีก สำหรับสาว ๆ ที่ไม่รู้ว่าจะซื้อเครื่องประดับร้านไหนดี เรามีพิกัดร้านเครื่องประดับใน SHOPEE มาให้เลือก f จุกๆกันไปเลยย</p>
+        </div>
+      </div>
+    </div>
+    <!------------จบส่วนของ Heros------------>
+
+    <!------------เริ่มส่วนของ Product------------>
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <a href="necklace.html" class="card-link">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/necklace.jfif');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">สร้อยคอ</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+    
+        <div class="col">
+          <a href="ring.html" class="card-link">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/ring.jfif');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">แหวน</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+    
+        <div class="col">
+          <a href="earring.html" class="card-link">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/earring.jfif');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">ต่างหู</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>   
+  </div>    
+    <!------------จบส่วนของ Product------------>
+
+    <!------------เริ่มส่วนของ Footer------------>
+    <footer class="py-3 my-4 bg-dark text-light">
+      <div class="container text-center">
+        <p class="mb-1">เว็บไซต์นี้จัดทำขึ้นเพื่อการศึกษา และเป็นส่วนหนึ่งของรายวิชา โปรแกรมกราฟิกสำหรับการออกแบบเว็บไซต์</p>
+        <p class="mb-1">จัดทำโดย</p>
+        <p class="mb-1">นางสาวเยาวเรศ โพนโสกเชือก</p>
+        <p class="mb-1">เสนอ</p>
+        <p class="mb-1">คุณครูกิตติชัย ทองดี</p>
+      </div>
+      <p class="text-center text-body-secondary">© 2024 accessories</p>
+    </footer>
+   <!------------จบส่วนของ Footer------------>
+   <script>
+    AOS.init();
+  </script>
+</body>
+</html>
