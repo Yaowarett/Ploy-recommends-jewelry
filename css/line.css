@@ -1,0 +1,12 @@
+.card-link {
+    text-decoration: none; /* ลบขีดเส้นใต้ของลิงค์ */
+  }
+  .card-link:hover .card {
+    transform: scale(1.05); /* ขยายการ์ดเล็กน้อยเมื่อ hover */
+    transition: transform 0.3s ease; /* กำหนดความเร็วของการเปลี่ยนแปลง */
+}
+
+.card-link:hover .card .card-cover {
+    filter: brightness(1.2); /* ปรับความสว่างของภาพพื้นหลัง */
+    transition: filter 0.3s ease;
+}
