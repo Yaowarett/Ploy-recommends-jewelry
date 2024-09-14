@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/line.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
       *{
         font-family: "Kanit", sans-serif;
@@ -26,8 +21,23 @@
         background-repeat: no-repeat; /* ป้องกันการทำซ้ำของภาพพื้นหลัง */
       }
       .text-shadow-1 {
-        text-shadow: 1px 1px 2px rgb(255, 253, 253);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
       }
+      .card img {
+        width: 100%; /* ปรับขนาดรูปภาพให้เต็มพื้นที่ของการ์ด */
+        height: auto; /* ให้ความสูงอัตโนมัติตามสัดส่วนของรูปภาพ */
+        object-fit: cover; /* ทำให้รูปภาพพอดีกับพื้นที่ของกรอบ */
+      }
+      /* สไตล์เมื่อโฮเวอร์การ์ด */
+  .card-cover:hover {
+    transform: scale(1.05); /* ขยายการ์ดเมื่อโฮเวอร์ */
+    transition: transform 0.3s ease; /* ให้มีความลื่นไหลเมื่อขยาย */
+  }
+
+  /* ทำให้ภาพมีเอฟเฟกต์เมื่อโฮเวอร์ */
+  .card-cover:hover {
+    filter: brightness(0.8); /* ทำให้ภาพมืดลงเล็กน้อยเมื่อโฮเวอร์ */
+  }
     </style>
 </head>
 <body>
@@ -49,20 +59,18 @@
         </div>
       </header>
     <!------------จบส่วนของ Header------------>
-
     <!------------เริ่มส่วนของ สไลด์------------>
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="img/Banner.png" class="d-block w-100" alt="...">
+            <img src="img/Banner.jpg" class="d-block w-100" alt="...">
           </div> 
       </div>
     <!-------------------------จบ ส่วนของสไลด์--------------------->
-
     <!------------เริ่มส่วนของ Heros------------>
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6" data-aos="fade-up" data-aos-duration="3000">
-        <img src="img/2.jpeg" class="d-block mx-lg-auto img-fluid rounded-5" alt="Woman accessorized with jewelry" width="700" height="500" loading="lazy">
+        <img src="img/accessories.jpeg" class="d-block mx-lg-auto img-fluid rounded-5" alt="Woman accessorized with jewelry" width="700" height="500" loading="lazy">
       </div>
       <div class="col-lg-6" data-aos="fade-up" data-aos-duration="3000">
         <div class="px-3 px-lg-4">
@@ -72,31 +80,23 @@
       </div>
     </div>
     <!------------จบส่วนของ Heros------------>
-
     <!------------เริ่มส่วนของ Product------------>
     <div class="container-fluid">
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        
         <div class="col">
-          <a href="necklace.html" class="card-link">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/necklace.jfif');">
+          <a href="necklace.html" class="text-decoration-none">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/necklace.jfif'); background-size: cover;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">สร้อยคอ</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  </li>
-                </ul>
               </div>
             </div>
           </a>
         </div>
     
         <div class="col">
-          <a href="ring.html" class="card-link">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/ring.jfif');">
+          <a href="ring.html" class="text-decoration-none">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/ring.jfif'); background-size: cover;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">แหวน</h3>
               </div>
@@ -105,21 +105,24 @@
         </div>
     
         <div class="col">
-          <a href="earring.html" class="card-link">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/earring.jfif');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <a href="earring.html" class="text-decoration-none">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/earring.jfif'); background-size: cover;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">ต่างหู</h3>
               </div>
             </div>
           </a>
         </div>
+        
       </div>
-    </div>   
-  </div>    
+    </div>
+    
     <!------------จบส่วนของ Product------------>
-
     <!------------เริ่มส่วนของ Footer------------>
-    <footer class="py-3 my-4 bg-dark text-light">
+    <footer style="background-color: black; color: white;" class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top text-center">
+      <div class="col-md-4 mb-0">
+        <p>© 2024 Accessories</p>
+      </div>
       <div class="container text-center">
         <p class="mb-1">เว็บไซต์นี้จัดทำขึ้นเพื่อการศึกษา และเป็นส่วนหนึ่งของรายวิชา โปรแกรมกราฟิกสำหรับการออกแบบเว็บไซต์</p>
         <p class="mb-1">จัดทำโดย</p>
@@ -127,8 +130,7 @@
         <p class="mb-1">เสนอ</p>
         <p class="mb-1">คุณครูกิตติชัย ทองดี</p>
       </div>
-      <p class="text-center text-body-secondary">© 2024 accessories</p>
-    </footer>
+    </footer>    
    <!------------จบส่วนของ Footer------------>
    <script>
     AOS.init();
